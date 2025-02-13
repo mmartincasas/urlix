@@ -1,0 +1,22 @@
+@use "tailwindcss";
+
+@theme {
+  /* Tipografías */
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Audiowide', serif;
+
+  /* Colores */
+  --color-primary-50: #e6e6f3;
+  --color-primary-100: #c2c2e0;
+  --color-primary-200: #9d9dd0;
+  --color-primary-300: #7979c0;
+  --color-primary-400: #5454af;
+  --color-primary-500: #15157a; /* Color principal */
+  --color-primary-600: #12126b;
+  --color-primary-700: #0f0f5c;
+  --color-primary-800: #0a0a4a;
+  --color-primary-900: #040419;
+}
+
+
+
