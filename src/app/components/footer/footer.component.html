@@ -1,3 +1,18 @@
-<footer class="bg-primary-900 text-white py-6 text-center">
-    <p>&copy; {{today | date:'yyyy'}} Bit-URL. Todos los derechos reservados.</p>
+<footer
+  class="bg-surface text-soft font-secondary border-t-4 border-black shadow-[0_-4px_0px_black] px-6 py-4 text-center text-sm"
+>
+  <p>
+    Hecho con ❤️ en modo <span class="font-bold text-accent">neobrutalista </span> – 
+    <a
+      href="https://github.com/mmartincasas/urlix"
+      target="_blank"
+      rel="noopener"
+      class="underline hover:text-primary transition"
+    >
+      Ver en GitHub
+    </a>
+  </p>
+  <p class="mt-1 opacity-50 text-xs tracking-wide">
+    {{ today | date: 'yyyy' }} URLIX.EU
+  </p>
 </footer>

@@ -1,24 +1,40 @@
-<section class="flex flex-col items-center justify-center py-16 px-6 text-center font-primary">
+<section class="flex flex-col items-center justify-center py-20 px-6 text-center font-primary text-soft">
 
-  <h1 class="text-5xl font-bold text-gray-900">Acorta tus URLs en segundos</h1>
-  <p class="text-lg text-gray-600 mt-4">Rápido, simple y sin complicaciones.</p>
-  
-  <div class="mt-6 bg-white p-4 rounded-lg shadow-md w-full max-w-md">
-    <form [formGroup]="formUrl" (ngSubmit)="createShortUrl()">
-      <input id="original_url" formControlName="original_url" type="text" placeholder="Introduce tu URL aquí"
-            class="w-full p-3 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300">
-      <button type="submit" class="w-full bg-primary-400 text-white px-4 py-2 mt-2 rounded-lg hover:bg-primary-500 transition">
+  <h1 class="text-4xl sm:text-5xl font-bold text-accent leading-tight">
+    Acorta tus URLs en segundos
+  </h1>
+  <p class="text-lg text-soft mt-4 font-secondary">
+    Rápido, simple y sin complicaciones.
+  </p>
+
+  <div class="mt-8 bg-white text-black p-6 border-4 border-black rounded-xl shadow-[6px_6px_0px_black] w-full max-w-xl">
+    <form [formGroup]="formUrl" (ngSubmit)="createShortUrl()" class="space-y-4">
+      <input
+        id="original_url"
+        formControlName="original_url"
+        type="text"
+        placeholder="Introduce tu URL aquí"
+        class="w-full p-3 border-4 border-black rounded-lg font-secondary shadow-[3px_3px_0px_black] placeholder:text-gray-500"
+      />
+      <button
+        type="submit"
+        class="w-full bg-accent text-white px-4 py-3 border-4 border-black rounded-lg font-primary text-lg font-bold shadow-[3px_3px_0px_black] hover:translate-x-[1px] hover:translate-y-[1px] transition"
+      >
         Acortar URL
       </button>
     </form>
 
     @if(shortUrl!=''){
-      <p class="text-green-500">¡URL acortada con éxito!</p>
-      <p class="text-blue-500 mt-2">
-        <a [href]="shortUrl" target="_blank">{{ shortUrl }}</a>
-      </p>
+      <div class="mt-6 text-left">
+        <p class="text-green-600 font-bold">¡URL acortada con éxito!</p>
+        <p class="mt-2 break-all">
+          <a [href]="shortUrl" target="_blank" class="hover:text-primary underline">
+            {{ shortUrl }}
+          </a>
+        </p>
+      </div>
     }
-
   </div>
-
 </section>
+
+
