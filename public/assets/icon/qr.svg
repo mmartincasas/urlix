@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 46 46">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .st0, .st1, .st5 {
+        stroke: #00d5ff;
+      }
+
+      .st1, .st4 {
+        stroke-width: .73px;
+      }
+
+      .st2 {
+        stroke-width: 1.47px;
+      }
+
+      .st2, .st3, .st4, .st6 {
+        stroke: #12131c;
+      }
+
+      .st3 {
+        stroke-width: 1.28px;
+      }
+
+      .st7 {
+        fill: #00d5ff;
+      }
+
+      .st5 {
+        stroke-width: 1.6px;
+      }
+
+      .st6 {
+        stroke-width: .37px;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M10.35,8.63h25.3c1.01,0,1.83.82,1.83,1.83v3.38H8.52v-3.38c0-1.01.82-1.83,1.83-1.83Z"/>
+  <polyline class="st2" points="33.31 30.47 39.54 30.47 39.54 13.84 6.46 13.84 6.46 30.47 12.67 30.47"/>
+  <rect class="st3" x="13.41" y="4.52" width="19.19" height="9.32"/>
+  <rect class="st2" x="13.41" y="4.52" width="19.19" height="9.32"/>
+  <rect class="st4" x="6.46" y="13.84" width="33.08" height="5.85"/>
+  <rect class="st1" x="28.63" y="15.72" width="5.52" height="2.23"/>
+  <rect class="st5" x="13.16" y="22.14" width="19.68" height="19.86"/>
+  <path class="st7" d="M19.89,24.89v3.58h-3.58v-3.58h3.58M20.67,24.11h-5.14v5.14h5.14v-5.14h0Z"/>
+  <rect class="st6" x="16.97" y="25.56" width="2.25" height="2.25"/>
+  <path class="st7" d="M19.89,35.67v3.58h-3.58v-3.58h3.58M20.67,34.89h-5.14v5.14h5.14v-5.14h0Z"/>
+  <rect class="st6" x="16.97" y="36.33" width="2.25" height="2.25"/>
+  <path class="st7" d="M29.69,24.89v3.58h-3.58v-3.58h3.58M30.47,24.11h-5.14v5.14h5.14v-5.14h0Z"/>
+  <rect class="st6" x="26.78" y="25.56" width="2.25" height="2.25"/>
+</svg>

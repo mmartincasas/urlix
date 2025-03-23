@@ -11,6 +11,8 @@ export default {
         secondary: '#B47FFF',
         highlight: '#FFCC33',
         soft: '#D3D9E2',
+        dull: '#2B2F3A',
+        mint: '#00E5B9'
       },
       fontFamily: {
         primary: ['Unbounded', 'sans-serif'],

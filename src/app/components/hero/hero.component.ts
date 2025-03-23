@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UrlService } from '../../services/url.service';
+import { FeaturesComponent } from "../features/features.component";
 
 @Component({
   selector: 'app-hero',
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, FeaturesComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
