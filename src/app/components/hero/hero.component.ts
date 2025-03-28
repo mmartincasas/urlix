@@ -3,10 +3,11 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UrlService } from '../../services/url.service';
 import { FeaturesComponent } from "../features/features.component";
+import { ShareButtonsComponent } from "../share-buttons/share-buttons.component";
 
 @Component({
   selector: 'app-hero',
-  imports: [ReactiveFormsModule, CommonModule, FeaturesComponent],
+  imports: [ReactiveFormsModule, CommonModule, FeaturesComponent, ShareButtonsComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
@@ -16,6 +17,10 @@ export class HeroComponent {
 
   formUrl: FormGroup;
   shortUrl: string = '';
+  isNotUrl: boolean = false;
+  isShortError: boolean = false;
+
+  copied = false;
 
   constructor(private fb: FormBuilder) {
     this.formUrl = this.fb.group({
@@ -29,6 +34,8 @@ export class HeroComponent {
   createShortUrl() {
 
     if (this.formUrl.valid) {
+      this.isNotUrl = false;
+      this.isShortError = false;
       const originalUrl = this.formUrl.value.original_url;
       this.urlService.createShortUrl(originalUrl).subscribe({
         next: (response) => {
@@ -36,11 +43,13 @@ export class HeroComponent {
         },
         error: (error) => {
           console.error('Error acortando la URL', error);
+          this.isShortError = true;
           this.shortUrl='';
         }
       });
     } else {
       console.log('Formulario no válido');
+      this.isNotUrl= true;
       this.shortUrl='';
     }
   }

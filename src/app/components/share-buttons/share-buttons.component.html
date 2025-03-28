@@ -1,0 +1,41 @@
+<div class="mt-4 flex justify-center gap-4">
+    <!-- Copiar -->
+    <button
+      (click)="copyToClipboard()"
+      class="bg-secondary border-2 border-black rounded-full w-14 h-14 flex items-center justify-center shadow-[3px_3px_0px_black] hover:translate-x-[1px] hover:translate-y-[1px]"
+      aria-label="Copiar URL"
+    >
+      <img src="assets/icon/copia.svg" alt="Acortar" class="w-6 h-6" />
+    </button>
+  
+    <!-- WhatsApp -->
+    <a
+      [href]="'https://wa.me/?text=' + shortUrl"
+      target="_blank"
+      class="bg-mint border-2 border-black rounded-full w-14 h-14 flex items-center justify-center shadow-[3px_3px_0px_black] hover:translate-x-[1px] hover:translate-y-[1px]"
+      aria-label="Compartir por WhatsApp"
+    >
+      <img src="assets/icon/whatsapp.svg" alt="Acortar" class="w-6 h-6" />
+    </a>
+  
+    <!-- Descargar QR -->
+    <button
+      (click)="downloadQR()"
+      class="bg-highlight border-2 border-black rounded-full w-14 h-14 flex items-center justify-center shadow-[3px_3px_0px_black] hover:translate-x-[1px] hover:translate-y-[1px]"
+      aria-label="Descargar código QR"
+    >
+      <img src="assets/icon/qr-mini.svg" alt="Acortar" class="w-6 h-6" />
+    </button>
+  </div>
+
+
+
+
+@if(isCopied){
+    <div
+    class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white text-black border-2 border-black px-4 py-2 rounded-lg shadow-[4px_4px_0px_black] font-bold font-primary text-sm z-50 transition-opacity duration-300"
+    >
+    ✅ URL copiada al portapapeles
+    </div>
+}
+
